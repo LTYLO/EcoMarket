@@ -5,6 +5,21 @@
     box-sizing: border-box;
     font-weight: bold;
   }
+ .Menu a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: black;
+}
+
   
   body {
     padding-top: 70px;
@@ -25,7 +40,10 @@
     font-size: 18px;
     transition: padding 0.3s ease;
   }
-  
+  #logo{
+    width: 50px;
+    height: 50px;
+  }
   .Menu ul {
     list-style: none;
     display: flex;
@@ -78,28 +96,30 @@
     color: white;
   }
   
-  button {
+  
+  .registra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
     height: 45px;
     padding: 8px;
-    border: none;
-    background-color: white;
-    color: rgb(6, 103, 59);
+    font-size: 16px;
     font-weight: bold;
+    color: rgb(6, 103, 59);
+    background-color: white;
+    border: none;
     border-radius: 8px;
+    text-decoration: none;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     z-index: 0;
     transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
   }
   
-  button::after {
+  
+  .registra::after {
     content: "";
     position: absolute;
     top: 0;
@@ -114,15 +134,16 @@
     z-index: -1;
   }
   
-  button:hover {
+  .registra:hover {
     color: white;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-  button:hover::after {
+  .registra:hover::after {
     transform: scaleX(1);
   }
+  
   
   @media (max-width: 992px) {
     .Menu {
@@ -135,7 +156,7 @@
     }
   
     .title {
-      font-size: 22px;
+      font-size: 28px;
     }
   
     button {
@@ -161,8 +182,11 @@
     }
   
     .Menu_right {
-      margin-bottom: 10px;
-    }
+        display: flex;
+        align-items: center;
+        gap: 10px; /* espacio entre imagen y texto */
+      }
+      
   
     .items {
       width: 100%;
@@ -196,9 +220,239 @@
   
     button {
       width: 100%;
-      max-width: 150px;
+      max-width: 110px;
       height: 40px;
       font-size: 15px;
+
     }
   }
   
+  
+
+  .img-logo{
+    margin-left: 2px;
+
+
+  }
+
+
+  .logo_img{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+  }
+
+  .search-container {
+    position: relative;
+    width: 500px;
+    height: 40px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    font-size: 14px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #777;
+  }
+
+  .button-search{
+   margin-top: 4px;
+   
+  }
+
+
+.registrer{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+  
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 0;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 120px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  color: #2d2d2d;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.product-info p {
+  flex-grow: 1;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #388e3c;
+}
+/* Responsivo para el buscador */
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .Menu {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .Menu_right {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Menu_left {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .registrer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .registra {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 500px;
+    
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+}
+
+/* Ajustes más pequeños aún */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.2em;
+  }
+
+  .price, .add-btn {
+    font-size: 0.9em;
+  }
+
+  .add-btn {
+    padding: 6px 12px;
+  }
+}
