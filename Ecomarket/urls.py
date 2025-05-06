@@ -20,5 +20,7 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.saludar)
+    path("",views.menu),
+    path("login",views.login, name="login"),
+    path("login-in",views.registrer, name="login_in")
 ]

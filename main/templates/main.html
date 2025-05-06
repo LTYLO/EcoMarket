@@ -31,9 +31,9 @@
         <li class="menu-item"><a href="#">Catálogo</a></li>
         <li class="menu-item"><a href="#">Vender</a></li>
         <li class="menu-item"><a href="#">Mis compras</a></li>
-        <li class="menu-item"><a href="#">Crear Cuenta</a></li>
+        <li class="menu-item"><a href="{% url 'login' %}">Crear Cuenta</a></li>
       </ul>
-      <a href="/login" class="registra">Ingresa</a>
+      <a href="{% url 'login_in' %}" class="registra">Ingresa</a>
 
     </div>
   </div>
@@ -44,7 +44,7 @@
     <div class="product-grid">
       <!-- Producto 1 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/guayaba.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -55,9 +55,9 @@
         </div>
       </div>
   
-       <!-- Producto 1 -->
+       <!-- Producto 2 -->
        <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/lulo.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -67,9 +67,9 @@
           </div>
         </div>
       </div>
-       <!-- Producto 1 -->
+       <!-- Producto 3 -->
        <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/mango.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -79,9 +79,9 @@
           </div>
         </div>
       </div>
-       <!-- Producto 1 -->
+       <!-- Producto 4 -->
        <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/maracuya.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -93,9 +93,9 @@
       </div>
 
 
-      <!-- Producto 1 -->
+      <!-- Producto 5 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/piña.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -106,9 +106,9 @@
         </div>
       </div>
 
-      <!-- Producto 1 -->
+      <!-- Producto 6 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/naranja.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -119,9 +119,9 @@
         </div>
       </div>
 
-      <!-- Producto 1 -->
+      <!-- Producto 7 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/papaya.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -133,9 +133,23 @@
       </div>
       
 
-      <!-- Producto 1 -->
+      <!-- Producto 8 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/aguacte.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <div class="product-info">
+          <h3>Nombre Producto 1</h3>
+          <p>Descripción breve del producto.</p>
+          <div class="product-bottom">
+            <span class="price">$10.00</span>
+            <button class="add-btn">Añadir</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Producto 9 -->
+      <div class="product-card">
+        <img src="{% static 'img/fresa.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -149,7 +163,7 @@
 
       <!-- Producto 1 -->
       <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
+        <img src="{% static 'img/guanabana.png' %}" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
         <div class="product-info">
           <h3>Nombre Producto 1</h3>
           <p>Descripción breve del producto.</p>
@@ -160,23 +174,6 @@
         </div>
       </div>
 
-
-      <!-- Producto 1 -->
-      <div class="product-card">
-        <img src="https://placehold.co/300x200/a0e5b9/333333?text=Producto+1" alt="Producto 1" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=Imagen+no+disponible';">
-        <div class="product-info">
-          <h3>Nombre Producto 1</h3>
-          <p>Descripción breve del producto.</p>
-          <div class="product-bottom">
-            <span class="price">$10.00</span>
-            <button class="add-btn">Añadir</button>
-          </div>
-        </div>
-      </div>
-
-      
-      
-      
       
     </div>
   </main>
